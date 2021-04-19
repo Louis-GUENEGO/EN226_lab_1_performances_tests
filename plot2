@@ -1,0 +1,8 @@
+set title 'Débit de donnée CPU en fonction de la taille de la zone mémoire'
+set xlabel 'nombre de mots dans la RAM (2 exposant)'
+set ylabel 'débit en Mo/s'
+set xtics 1,1,27
+set grid
+set terminal png size 1024, 768 enhanced font "Helvetica, 11"
+set output "plot2.png"
+plot "perfgo2" with linespoints

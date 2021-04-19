@@ -1,0 +1,8 @@
+set title 'Rapiditée d"exécution en fonction des enjabée'
+set xlabel 'Enjenbée (exposants 2)'
+set ylabel 'Temps (ms)'
+set xtics 1,1,27
+set grid
+set terminal png size 1024, 768 enhanced font "Helvetica, 11"
+set output "plot1.png"
+plot "perfgo1" with linespoints
